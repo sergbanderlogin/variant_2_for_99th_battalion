@@ -1,0 +1,42 @@
+.header__recruiting{
+  &--content {
+    width: 100%;
+    min-height: 30vh;
+    justify-content: center;
+    align-items: center;
+  }
+
+  &--title {
+    font-family: 'Poppins', sans-serif;
+    text-transform: uppercase;
+    text-align: center;
+    font-size: clamp(2rem, 5vw + 2rem, 5rem);
+    font-weight: 700;
+    color: rgba(200, 199, 199, 0.3);
+    text-shadow: 0.4rem 0.4rem 0.7rem rgba(0, 0, 0, 0.5);
+  }
+}
+
+.section-recruiting {
+  &__description {
+    &--title {
+      font-family: "Poppins", sans-serif;
+      font-size: clamp(3rem, 5vw + 2rem, 3.4rem);
+      letter-spacing: 0.25rem;
+      font-weight: 700;
+      text-transform: uppercase;
+    }
+
+    &--blockquote {
+      font-family: "Poppins", sans-serif;
+      font-size: clamp(1rem, 5vw + 1rem, 1.8rem);
+      font-weight: 300;
+      letter-spacing: 1.25px;
+    }
+  }
+}
+
+.breadcrumb-list {
+  display: inline-block;
+  text-align: center;
+}
