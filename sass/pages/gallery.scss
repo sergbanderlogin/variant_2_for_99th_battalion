@@ -1,0 +1,123 @@
+.header__gallery {
+  &--content {
+    width: 100%;
+    min-height: 30vh;
+    justify-content: center;
+    align-items: center;
+  }
+
+  &--title {
+    font-family: 'Poppins', sans-serif;
+    text-transform: uppercase;
+    text-align: center;
+    font-size: clamp(2rem, 5vw + 2rem, 5rem);
+    font-weight: 700;
+    color: rgba(200, 199, 199, 0.3);
+    text-shadow: 0.4rem 0.4rem 0.7rem rgba(0, 0, 0, 0.5);
+  }
+}
+
+.section-gallery {
+  &__description {
+    &--title {
+      font-family: 'Poppins', sans-serif;
+      font-size: clamp(3rem, 5vw + 2rem, 3.4rem);
+      font-weight: 700;
+      letter-spacing: .25rem;
+      text-transform: uppercase;
+    }
+
+    &--blockquote {
+      font-family: "Poppins", sans-serif;
+      font-size: clamp(1rem, 5vw + 1rem, 1.8rem);
+      font-weight: 300;
+      letter-spacing: 1.8px;
+    }
+  }
+}
+
+.breadcrumb-list {
+  display: inline-block;
+  text-align: center;
+}
+
+.gallery .img img {
+  border: 10px solid  #fff;
+  object-fit: cover;
+  overflow: hidden;
+  cursor: pointer;
+  transition: .3s;
+}
+
+.gallery .img:hover img {
+  transform: scale(1.1);
+}
+
+.gallery .popUp-gallery {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.8);
+  display: none;
+}
+
+.gallery .popUp-gallery img {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  border: 5px solid #fff;
+  -webkit-border-radius: 8px;
+  -moz-border-radius: 8px;
+  border-radius: 8px;
+  width: 1920px;
+}
+
+.gallery .popUp-gallery span {
+  position: fixed;
+  top: 20px;
+  right: 20px;
+  width: 40px;
+  height: 40px;
+  background: #fff;
+  color: $darkgray;
+  font-size: 3rem;
+  font-weight: 300;
+  text-align: center;
+  line-height: 40px;
+  border: 1px solid $olive;
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  border-radius: 50%;
+  cursor: pointer;
+  z-index: 10;
+}
+
+
+@media screen and (max-width: 992px) {
+  .header__gallery--title {
+    padding-top: 7rem;
+    padding-left: 2rem;
+    padding-right: 2rem;
+  }
+
+  .gallery .popUp-gallery span {
+    position: fixed;
+    top: 20%;
+    right: 20px;
+  }
+
+  }
+
+@media screen and (max-width: 768px) {
+  .gallery .popUp-gallery {
+    opacity: 0;
+    z-index: -100;
+  }
+
+  .gallery .img:hover img {
+    transform: scale(1);
+  }
+}

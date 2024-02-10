@@ -1,0 +1,32 @@
+.our-goal {
+  width: 100%;
+  min-height: 720px;
+
+  &__title {
+    font-family: 'Poppins', sans-serif;
+    font-size: clamp(3rem, 5vw + 2rem, 3.4rem);
+    letter-spacing: .25rem;
+    font-weight: 700;
+    text-transform: uppercase;
+  }
+
+  &__paragraph {
+    font-family: 'Poppins', sans-serif;
+    font-weight: 300;
+    font-size: clamp(1rem, 5vw + 1rem, 1.6rem);
+    letter-spacing: 1.2px;
+  }
+}
+
+@media screen and (max-width: 992px) {
+  .our-goal__shape {
+    width: 156px;
+  }
+}
+
+@media screen and (max-width: 576px) {
+  .our-goal__shape {
+    width: 112px;
+  }
+}
+

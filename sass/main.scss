@@ -1,0 +1,47 @@
+// normalize-scss
+@import "normalize_scss/normalize";
+@import "normalize_scss/variables";
+@import "normalize_scss/vertical-rhythm";
+
+//variables & functions
+@import "abstracts/functions";
+@import "abstracts/mixins";
+@import "abstracts/variables";
+
+//base & layout
+@import "base/animations";
+@import 'base/base';
+@import "base/typography";
+@import 'base/breakpoints';
+@import 'base/grid';
+
+//colors
+@import "base/colors";
+
+//components (button, card, navbar etc)
+//@import 'components/card';
+//@import 'components/button';
+@import 'components/navbar';
+//@import 'components/badge';
+
+// utilities (margin, padding, opacity, etc)
+@import 'base/utilities';
+
+@import "layout/navigation";
+@import "layout/header";
+@import "layout/section_carousel";
+@import "layout/section_our-goal";
+@import "layout/section_information";
+@import "layout/section_news";
+@import "layout/section_contact";
+@import "layout/section_footer";
+
+
+
+@import "pages/about";
+@import "pages/news";
+@import "pages/gallery";
+
+body {
+  background-color: #808080;
+}

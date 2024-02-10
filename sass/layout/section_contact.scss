@@ -1,0 +1,92 @@
+.section__contact {
+  width: 100%;
+  min-height: 560px;
+}
+
+.contact__title {
+  font-family: "Poppins", sans-serif;
+  font-size: clamp(3rem, 5vw + 2rem, 3.4rem);
+  letter-spacing: 0.25rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  background-color: transparent;
+  background-position: 18rem 5rem;
+  background-repeat: no-repeat;
+}
+
+.contact__paragraph {
+  font-family: "Poppins", sans-serif;
+  font-weight: 300;
+}
+
+.contact__form {
+  //display: flex;
+  max-width: 700px;
+  min-height: 100px;
+  border-radius: 6px;
+  justify-content: center;
+  background: black;
+  padding: 30px 40px;
+}
+
+.single-input-field input {
+  background: #121212;
+  border-radius: 6px;
+  height: 55px;
+  width: 100%;
+  margin-bottom: 30px;
+
+  color: #535353;
+  border: 1px solid #535353;
+  outline: 0;
+}
+
+.single-input-field input:focus {
+  border-color: #0d6efd;
+}
+
+.single-input-field textarea {
+  border-radius: 6px;
+  min-height: 100px;
+  width: 100%;
+  //padding: 0px 20px;
+  //padding-inline-start: 15px;
+  color: #535353;
+  border: 1px solid #535353;
+  resize: none;
+  outline: 0;
+
+  background: #121212;
+}
+
+.single-input-field textarea:focus {
+  border-color: $blue;
+}
+
+.single-input-field.field-message:before {
+  display: none;
+}
+
+.field-message {
+  margin-bottom: 20px;
+}
+
+.border-btn {
+  border-radius: 6px;
+  height: 55px;
+  width: 100%;
+  padding: 0 20px;
+  padding-inline-start: 15px;
+  background: #121212;
+  color: white;
+  border: 1px solid #535353;
+  outline: 0;
+  transition: all 0.4s;
+}
+
+.border-btn:hover {
+  background-color: $primary;
+  border-color: $secondary;
+  color: $secondary;
+}
+

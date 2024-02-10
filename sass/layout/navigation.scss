@@ -1,0 +1,152 @@
+/* Navbar_desktop */
+.navbar {
+  text-transform: uppercase;
+}
+.nav__link {
+  font-family: "Poppins", sans-serif;
+  font-size: 1.6rem;
+  color: $white;
+  padding: 1.25rem;
+  transition: color 0.4s;
+}
+
+
+.nav__link:hover {
+  color: $secondary;
+}
+/* End of Navbar_desktop */
+
+/* Navbar_mobile */
+.navbar__mobile {
+  display: none;
+}
+
+.nav-mobile {
+  width: 100%;
+  height: 1.6rem;
+  background-color: rgba(68, 74, 56, 0.7);
+  position: fixed;
+  top: -8rem;
+  padding: 4rem;
+  z-index: 10;
+  animation: animateNavbar 1s 0.5s forwards;
+  transition: height 0.5s;
+}
+
+.nav-mobile.change {
+  height: 100vh;
+}
+
+@keyframes animateNavbar {
+  0% {
+    top: -8rem;
+  }
+  100% {
+    top: 0;
+  }
+}
+
+.nav-mobile-logo {
+  position: absolute;
+  top: 1.5rem;
+  left: 4rem;
+}
+
+.menu-mobile {
+  width: 4rem;
+  height: 4rem;
+  position: fixed;
+  z-index: 500;
+  top: 2rem;
+  right: 4rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  cursor: pointer;
+}
+
+.line {
+  width: 100%;
+  height: 0.2rem;
+  background-color: $white;
+  transition: transform 0.3s;
+}
+
+.line-1 {
+  width: 50%;
+}
+
+.line-3 {
+  width: 50%;
+  margin-left: auto;
+}
+
+.change .line-1 {
+  transform: translate(100%, 1rem) rotate(-35deg);
+  transform-origin: right;
+}
+
+.change .line-1,
+.change .line-2,
+.change .line-3 {
+  background-color: $secondary;
+}
+
+.change .line-3 {
+  transform: translateY(-1rem) rotate(35deg);
+  transform-origin: right;
+}
+
+.nav-mobile-list {
+  position: absolute;
+  top: 15%;
+  left: 50%;
+  transform: translateX(-50%);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  opacity: 0;
+  visibility: hidden;
+  transition: all 0.2s;
+}
+
+.change .nav-mobile-list {
+  opacity: 1;
+  visibility: visible;
+  transition: all 0.7s 0.5s;
+}
+
+.nav-mobile-link {
+  font-family: "Poppins", sans-serif;
+  text-transform: uppercase;
+  font-size: 2rem;
+  text-align: center;
+  letter-spacing: 0.3rem;
+  color: $white;
+  margin: 1rem 0;
+  transition: color 0.4s;
+}
+
+.nav-mobile-link:hover {
+  color: $secondary;
+}
+/*  End of Navbar */
+
+@media screen and (max-width: 992px) {
+  .navbar__mobile {
+    display: block;
+  }
+  .navbar__desktop {
+    display: none;
+  }
+  .logo__img {
+    width: 36px;
+  }
+}
+
+@media screen and (max-width: 576px) {
+  .logo__img {
+    width: 36px;
+  }
+}
+/* End of Navbar_mobile */
